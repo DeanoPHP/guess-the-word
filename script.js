@@ -76,7 +76,6 @@ outputTheBoxesForWord = () => {
         const div = document.createElement('div');
         div.classList.add('box');
  
-    
         if (global.guessedLetters.includes(letter)) {    
            div.innerHTML = letter;
         }
@@ -86,7 +85,7 @@ outputTheBoxesForWord = () => {
 }
 
 correctOutput = (guessletter) => {
-    global.correctWord.push(guessletter).toLowerCase();
+    global.correctWord.push(guessletter.toLowerCase());
 
     const sortCorrectWord = global.correctWord.sort();
     const sortGameWord = global.gameWord.split('').sort();

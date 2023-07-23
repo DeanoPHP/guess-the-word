@@ -4,19 +4,9 @@
     padding: 0;
 }
 
-body {
-    height: 1400px;
-    background-color: aquamarine;
-}
-
 h1 {
     text-align: center;
     margin: 20px;
-}
-
-.container {
-    width: 100%;
-    height: 1000px;
 }
 
 .nav {
@@ -26,17 +16,17 @@ h1 {
     color: white;
 }
 
+.getWord {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+    /* background-color: blue; */
+}
+
 .right {
     width: 100%;
     height: 1200px;
     background-color: aliceblue;
-}
-
-main {
-    width: 100%;
-    height: 100vh;
-    margin: 0px auto;
-    display: flex;
 }
 
 .display-word{
@@ -49,30 +39,25 @@ main {
 }
 
 .letters-container {
+    width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(247, 152, 10);
+    background-color: rgb(81, 23, 215);
     width: 100%;
 }
 
 .box {
-    width: 100px;
-    height: 100px;
+    width: 40px;
+    height: 40px;
     border: 1px solid black;
     border-radius: 10px;
     background-color: aliceblue;
-    padding: 0 0 15px 25px;
-    margin: 20px;
-    font-size: 4.3em;
+    padding: 0 0 0 10px;
+    margin: 10px;
+    font-size: 2.2em;
     font-weight: bold;
     color:brown;
     align-self: center;
-}
-
-.getWord {
-    width: 50%;
-    height: 300px;
-    margin: 20px auto;
 }
 
 input {
@@ -93,7 +78,7 @@ input {
 }
 
 label {
-    margin-left: 14px;
+    margin-left: 40%;
     font-size: 1.2em;
     color: rgb(56, 55, 53);
 }
@@ -104,7 +89,7 @@ label {
 }
 
 button {
-    width: 70%;
+    width: 40%;
     height: 30px;
     border: 1px solid black;
     border-radius: 10px;
@@ -113,11 +98,11 @@ button {
     color: aliceblue;
     font-size: 1.2em;
     font-weight: bolder;
-    margin-left: 20px;
+    margin: 0 auto;
 }
 
 button[id='start-game'] {
-    width: 70%;
+    width: 40%;
     height: 30px;
     border: 1px solid black;
     border-radius: 10px;
