@@ -15,7 +15,7 @@ h1 {
 }
 
 .container {
-    width: 100vw;
+    width: 100%;
     height: 1000px;
 }
 
@@ -52,6 +52,7 @@ main {
     display: flex;
     justify-content: center;
     background-color: rgb(247, 152, 10);
+    width: 100%;
 }
 
 .box {
@@ -69,7 +70,7 @@ main {
 }
 
 .getWord {
-    width: 14%;
+    width: 50%;
     height: 300px;
     margin: 20px auto;
 }
@@ -99,16 +100,29 @@ label {
 
 .buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 button {
-    width: 98%;
+    width: 70%;
     height: 30px;
     border: 1px solid black;
     border-radius: 10px;
     margin-bottom: 10px;
     background-color: brown;
+    color: aliceblue;
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+button[id='start-game'] {
+    width: 70%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(23, 225, 101);
     color: aliceblue;
     font-size: 1.2em;
     font-weight: bolder;

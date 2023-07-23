@@ -32,7 +32,7 @@ function randomWord() {
 function checkLetterInWord(e) {
     e.preventDefault()
 
-    const guessletter = document.getElementById('get-letter').value;
+    const guessletter = document.getElementById('get-letter').value.toLowerCase();
     const gameWord = global.gameWord.split('');
 
     if (!gameWord.includes(guessletter)) {
@@ -46,7 +46,7 @@ function checkLetterInWord(e) {
         alert('You have already tried that letter');
         return;
     } else {
-        global.guessedLetters.push(guessletter);
+        global.guessedLetters.push(guessletter.toLowerCase());
     }
 
     outputTheBoxesForWord();
@@ -86,7 +86,7 @@ outputTheBoxesForWord = () => {
 }
 
 correctOutput = (guessletter) => {
-    global.correctWord.push(guessletter);
+    global.correctWord.push(guessletter).toLowerCase();
 
     const sortCorrectWord = global.correctWord.sort();
     const sortGameWord = global.gameWord.split('').sort();
