@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 1400px;
+    background-color: aquamarine;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    width: 100vw;
+    height: 1000px;
+}
+
+.nav {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+.right {
+    width: 100%;
+    height: 1200px;
+    background-color: aliceblue;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+}
+
+.display-word{
+    font-size: 5em;
+    font-weight: bolder;
+    color: rgb(247, 152, 10);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.letters-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(247, 152, 10);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 0 0 15px 25px;
+    margin: 20px;
+    font-size: 4.3em;
+    font-weight: bold;
+    color:brown;
+    align-self: center;
+}
+
+.getWord {
+    width: 14%;
+    height: 300px;
+    margin: 20px auto;
+}
+
+input {
+    display: block;
+}
+
+.get-letter {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 15px 10px 10px 10px;
+    margin: 20px auto;
+    font-size: 2.3em;
+    font-weight: bold;
+    color:brown;
+}
+
+label {
+    margin-left: 14px;
+    font-size: 1.2em;
+    color: rgb(56, 55, 53);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 98%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: brown;
+    color: aliceblue;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.message {
+    font-size: 3em;
+    color: #333;
+    text-align: center;
+}
+
