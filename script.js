@@ -7,6 +7,12 @@ const global = {
     message: document.querySelector('.message'),
     lettersContainer: document.querySelector('.letters-container'),
     counter: 3,
+    input: function() {
+        if (global.gameWord == '') {
+            document.getElementById('get-letter').style.display = 'none';
+            document.getElementById('logo').style.display = 'block';
+        }
+    },
 }
 
 startGame = (e) => {
@@ -14,6 +20,8 @@ startGame = (e) => {
 
     if (global.gameWord === '') {
         global.gameWord = randomWord();
+        document.getElementById('get-letter').style.display = 'block';
+        document.getElementById('logo').style.display = 'none';
     }
 
     displayWord();
@@ -33,6 +41,7 @@ function checkLetterInWord(e) {
     e.preventDefault()
 
     const guessletter = document.getElementById('get-letter').value.toLowerCase();
+
     const gameWord = global.gameWord.split('');
 
     if (!gameWord.includes(guessletter)) {
@@ -128,6 +137,7 @@ endOfLives = () => {
 function init() {
     document.getElementById('start-game').addEventListener('click', startGame);
     document.getElementById('submit-letter').addEventListener('click', checkLetterInWord);
+    global.input();
 }
 
 init();
