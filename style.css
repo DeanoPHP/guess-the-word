@@ -36,6 +36,7 @@ h1 {
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin: 20px 0 20px 0;
 }
 
 .letters-container {
@@ -44,6 +45,7 @@ h1 {
     justify-content: center;
     background-color: rgb(81, 23, 215);
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .box {
@@ -87,7 +89,7 @@ h1 {
 }
 
 label {
-    margin-left: 40%;
+    margin-left: 38%;
     font-size: 1.2em;
     color: rgb(56, 55, 53);
 }
